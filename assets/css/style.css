@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+header .navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar img{
+    cursor: pointer;
+}
+header .navbar ul li{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+}
+header .navbar ul li:hover{
+    text-decoration: underline;
+}
+
+header{
+    background-image: url(../img/Header\ Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 85px;
+}
+.navbar .logo{
+    width: 134px;
+    height: 36px;
+}
+
+.navbar img{
+    width: 100%;
+}
+
+header .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    text-align: justify;
+    color: white;
+}
+header .text p{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.text h1{
+    font-size: 3.5rem;
+    width: 313px;
+    margin: 0 auto;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 600;
+}
+.text h1, 
+.text div{
+    text-align: center;
+    justify-content: center;
+}
+
+header button{
+    margin-top: 10px;
+    padding: 14px 30px;
+    margin-left: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 28px;
+    border: none;
+    font-weight: 600;
+}
+button.active{
+    background: #23272A;
+    color: white;
+}
+section{
+    margin: 40px 0 0 0;
+}
+.section-1{
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .content{
+    display: flex;
+    width: 971px;
+    height: 394px;
+    align-items: center;
+    gap: 0 16px;
+}
+.section-1 .text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 348px;
+    height: 374px;
+    text-align: left;
+    color: #23272A;
+}
+.section-1 .content h2{
+    width: 329px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 54px;
+}
+
+.section-1 p{
+    text-align: left;
+}
+
+.section-2{
+    width: 100%;
+    height: 448px;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.section-2 .content{
+    display: flex;
+}
+.section-2 .text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: center;
+    width: 351px;
+    height: 212px;
+}
+.section-2 h2,
+.section-3 h2{
+    width: 329px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 54px;
+}
+
+.section-3{
+    width: 100%;
+    height: 448px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-3 .content{
+    display: flex;
+}
+
+.section-3 .text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: center;
+    width: 351px;
+    height: 212px;
+}
+
+.section-4{
+    width: 100%;
+    height: 744px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f6f6;
+}
+
+.section-4 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    gap: 16px;
+}
+.section-4 .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.section-4 h2{
+    font-family: "Luckiest Guy", cursive;
+    width: 608px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 54px;
+}
+
+footer{
+    width: 100%;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #23272A;
+}
+
+.menu-btn{
+    width: 50px;
+    display: none;
+}
+@media (max-width: 800px) {
+    .navbar{
+        display: none
+    }
+    section{
+        margin: 0;
+    }
+    header{
+        width: 100%;
+        background-image: url(/assets/img/Header\ Background\ \(1\).png);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    header .text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px 0 24px;
+        
+    }
+    header .text div{
+        display: flex;
+        flex-direction: column;
+    }
+    header .text p{
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    header .text h1{
+        margin: 0;
+        font-size: 2rem;
+        width: 278px ;
+        text-align: left 
+    }
+    section{
+        /* margin: 10px 0; */
+        
+    }
+    .section-1{
+        height: 574px;
+        margin: 0 0 40px 0;
+    }
+    .section-2,
+    .section-3,
+    .section-4{
+        height: 507px;
+        padding: 20px 24px 20px 24px;
+    }
+    .section-1 .content,
+    .section-2 .content,
+    .section-3 .content,
+    .section-4 .content{
+        flex-direction: column;
+        gap: 12px;
+
+    }
+
+    .section-1 .content img,
+    .section-2 .content img,
+    .section-3 .content img,
+    .section-4 .content img{
+        align-self: center;
+        width: 379px;
+    }
+    .section-1 .content .text,
+    .section-2 .content .text,
+    .section-3 .content .text,
+    .section-4 .content .text{
+        width: 100%;
+        padding: 0 24px;
+
+    }
+    .section-4{
+        margin: 0;
+        padding: 0 24px;
+    }
+    .section-1 .content h2,
+    .section-2 .content h2,
+    .section-3 .content h2,
+    .section-4 .content h2{
+        width: 100%;
+        font-size: 2rem;
+        line-height: 32px;
+    }
+
+    .section-2 .content{
+        flex-direction: column-reverse;
+
+    }
+    .section-2 .content .text{
+        justify-content: left;
+    }
+    
+    .section-4 .content .text{
+        text-align: left;
+        
+    }
+    footer{
+        height: 100px;
+    }
+    footer img{
+        width: 130px;
+    }
+    .menu-btn{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    
+
+    
+}
